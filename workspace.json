@@ -1,8 +1,107 @@
 {
   "version": 2,
-
-  "projects": {},
+  "projects": {
+    "i18n-blog": {
+      "root": "apps/i18n-blog",
+      "sourceRoot": "apps/i18n-blog",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "root": "apps/i18n-blog",
+            "outputPath": "dist/apps/i18n-blog"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "i18n-blog:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "i18n-blog:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "i18n-blog:build:production"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/i18n-blog/**/*.{ts,tsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/apps/i18n-blog"
+          ],
+          "options": {
+            "jestConfig": "apps/i18n-blog/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "i18n-blog-e2e": {
+      "root": "apps/i18n-blog-e2e",
+      "sourceRoot": "apps/i18n-blog-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/i18n-blog-e2e/cypress.json",
+            "tsConfig": "apps/i18n-blog-e2e/tsconfig.e2e.json",
+            "devServerTarget": "i18n-blog:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "i18n-blog:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/i18n-blog-e2e/**/*.{js,ts}"
+            ]
+          }
+        }
+      }
+    }
+  },
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
-  }
+    "defaultCollection": "@nrwl/next"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "i18n-blog"
 }

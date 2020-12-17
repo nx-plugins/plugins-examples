@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "i18n-blog": {
+      "tags": []
+    },
+    "i18n-blog-e2e": {
+      "tags": [],
+      "implicitDependencies": ["i18n-blog"]
+    }
+  }
 }
