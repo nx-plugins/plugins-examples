@@ -55,6 +55,14 @@
             "jestConfig": "apps/i18n-blog/jest.config.js",
             "passWithNoTests": true
           }
+        },
+        "extract": {
+          "executor": "@nx-plugins/i18n:build",
+          "options": {
+            "framework": "React",
+            "directory": "apps/i18n-blog/i18n",
+            "locales": ["en","es"]
+          }
         }
       }
     },

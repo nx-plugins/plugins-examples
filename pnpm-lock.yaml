@@ -1,16 +1,18 @@
 dependencies:
   '@nrwl/next': 11.0.10_24703ddfb89821509431565753cbce5d
-  '@nx-plugins/i18n-core-utils': 0.0.1-canary.1
-  '@nx-plugins/i18n-extract': 0.0.1-canary.1
-  '@nx-plugins/i18n-react': 0.0.1-canary.1_bcad7460d0e9e623daa8b7402f4ad8a6
-  '@nx-plugins/i18n-react-data-access': 0.0.1-canary.1_react@17.0.1
-  '@nx-plugins/i18n-react-ui': 0.0.1-canary.1_872ab84b494a97117394fbb1c109a8a0
-  '@nx-plugins/i18n-react-utils': 0.0.1-canary.1_react@17.0.1
+  '@nx-plugins/i18n': 0.0.1-canary.15
+  '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
+  '@nx-plugins/i18n-react': 0.0.1-canary.8_ca859b891552d236c61178bbf285f022
+  '@nx-plugins/i18n-react-data-access': 0.0.1-canary.8_react@17.0.1
+  '@nx-plugins/i18n-react-ui': 0.0.1-canary.8_327caae62c8b952be364513b22eaa605
+  '@nx-plugins/i18n-react-utils': 0.0.1-canary.8_527691467da5218793eccf323ee4f048
   core-js: 3.8.1
   document-register-element: 1.13.1
+  himalaya: 1.1.0
   next: 10.0.1_673d10ab695550cf3e856d21663dfc3f
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
+  strip-comments: 2.0.1
   tslib: 2.0.3
 devDependencies:
   '@babel/core': 7.9.6
@@ -3506,56 +3508,62 @@ packages:
       prettier: ^2.0.4
     resolution:
       integrity: sha512-SxRbo6vp6QEvzuVkZSXyL6g7sFsWpKzCtYYpv4VGk+2v7rQpInuEfm+hqwoGjXjxVBl2waPy3Nrp5cPTNN+STQ==
-  /@nx-plugins/i18n-core-utils/0.0.1-canary.1:
+  /@nx-plugins/i18n-core-utils/0.0.1-canary.8:
     dev: false
     resolution:
-      integrity: sha512-ETsDRWSrsgD7F9oNcJVfdIK3RN6NdrVpb5aZdeVv+yiy7pWb5+3yFYWd5C7NXt1YaYbMRCTE0FyR8TzdtSoHZA==
-  /@nx-plugins/i18n-extract/0.0.1-canary.1:
-    dev: false
-    resolution:
-      integrity: sha512-QDra43PXmzIKDjqAJEih33OcgiQZbeVcAeMeMSszv11kRC87Z3haRRdX1rN/yJhs4RqVm9SK37ObQubtNrfvbA==
-  /@nx-plugins/i18n-react-data-access/0.0.1-canary.1_react@17.0.1:
+      integrity: sha512-I0RbQkL5MjW6QPseIOPuBCeiSw5nWa14DG7QJp1z77Lf6BFoovnQjKtyAyShXFiibSkzYL9XZNY7A0eNvyxJOA==
+  /@nx-plugins/i18n-react-data-access/0.0.1-canary.8_react@17.0.1:
     dependencies:
       react: 17.0.1
     dev: false
     peerDependencies:
       react: 17.0.1
     resolution:
-      integrity: sha512-DcVxBavNQ1XxPqv8nyX2ZvIEy9xASWJ9NTnlMYPVeQmQJQX28ELT8aOMc3idR9QYBj/V757y8iPKwPsFCrYCcA==
-  /@nx-plugins/i18n-react-ui/0.0.1-canary.1_872ab84b494a97117394fbb1c109a8a0:
+      integrity: sha512-0eNzGpqtffSUFuwRyWT8F9Pu9Qk/wEdBfIIhVBl/N10gu62n1Qff75L9GD1yR2mVLIoPdSCBlCLtWSmKt+PTUg==
+  /@nx-plugins/i18n-react-ui/0.0.1-canary.8_327caae62c8b952be364513b22eaa605:
     dependencies:
-      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.1_react@17.0.1
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.8_react@17.0.1
+      '@nx-plugins/i18n-react-utils': 0.0.1-canary.8_527691467da5218793eccf323ee4f048
       react: 17.0.1
     dev: false
     peerDependencies:
-      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.1
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-utils': 0.0.1-canary.8
       react: 17.0.1
     resolution:
-      integrity: sha512-GtKl8082F+aqrqeXz7yqVb0JG804G5ny6kLHwbVOoB7T3R8gayBj4ogsQb4/FUInkkPsPABfe81A44nE3BujCA==
-  /@nx-plugins/i18n-react-utils/0.0.1-canary.1_react@17.0.1:
+      integrity: sha512-AlkukqRAgeKqQ8up8gYfKER3zgDVmzQ9fGEpM+at3S9JNIut2kbmvJWxX3x2/J+2PwVJb9IzaDlD7bvDMDi2zw==
+  /@nx-plugins/i18n-react-utils/0.0.1-canary.8_527691467da5218793eccf323ee4f048:
     dependencies:
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
       react: 17.0.1
     dev: false
     peerDependencies:
-      '@nx-plugins/i18n-core-ui': 0.0.1-canary.1
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
       react: 17.0.1
     resolution:
-      integrity: sha512-bcYTTAopButdNRN1Ora9c3e0hg70PuP0PRajdJtcS0fnvE3Lg6GKTGn10tMqzl+bmfFjIWslmrhlrio21APIfw==
-  /@nx-plugins/i18n-react/0.0.1-canary.1_bcad7460d0e9e623daa8b7402f4ad8a6:
+      integrity: sha512-kYirScAG/c95KxSsS17mJ1XS7BOOeAJlCZ+Jtr6Yc4trOYxh1/wLAELIfI/iwW3pecsCwKjVzo/tb5AEvCE3EA==
+  /@nx-plugins/i18n-react/0.0.1-canary.8_ca859b891552d236c61178bbf285f022:
     dependencies:
-      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.1_react@17.0.1
-      '@nx-plugins/i18n-react-ui': 0.0.1-canary.1_872ab84b494a97117394fbb1c109a8a0
-      '@nx-plugins/i18n-react-utils': 0.0.1-canary.1_react@17.0.1
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.8_react@17.0.1
+      '@nx-plugins/i18n-react-ui': 0.0.1-canary.8_327caae62c8b952be364513b22eaa605
+      '@nx-plugins/i18n-react-utils': 0.0.1-canary.8_527691467da5218793eccf323ee4f048
       react: 17.0.1
     dev: false
     peerDependencies:
-      '@nx-plugins/i18n-core-ui': 0.0.1-canary.1
-      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.1
-      '@nx-plugins/i18n-react-ui': 0.0.1-canary.1
-      '@nx-plugins/i18n-react-utils': 0.0.1-canary.1
+      '@nx-plugins/i18n-core-utils': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-data-access': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-ui': 0.0.1-canary.8
+      '@nx-plugins/i18n-react-utils': 0.0.1-canary.8
       react: 17.0.1
     resolution:
-      integrity: sha512-zSKb5Tg3LuFVo37mb9umr/mpE6A6cisvH+rdcvp8Tyq1i7UrDLyuYVt0EgX2h1imMUEOc7DX3RPyCorBPy5W7A==
+      integrity: sha512-HRVeDy+JqHtiZDkamnGbtC76bkkJ4mpjLOCB1HKpyvyiHR49WTj1Tpjl1ZtHnFXl2sgWA2P1bWukQETfVheiiw==
+  /@nx-plugins/i18n/0.0.1-canary.15:
+    dev: false
+    resolution:
+      integrity: sha512-PrHdqzScn2PVdj7WgYMEQFbwA4A0QwRL6bFpwHjIWcsrf/PaHvflCe0UYLmtc3Cc5Qb2LhKRjUhV0EpQTFQ6Iw==
   /@rollup/plugin-babel/5.0.2_@babel+core@7.9.6+rollup@1.31.1:
     dependencies:
       '@babel/core': 7.9.6
@@ -8210,6 +8218,10 @@ packages:
   /hex-color-regex/1.1.0:
     resolution:
       integrity: sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+  /himalaya/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-LLase1dHCRMel68/HZTFft0N0wti0epHr3nNY7ynpLbyZpmrKMQ8YIpiOV77TM97cNpC8Wb2n6f66IRggwdWPw==
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -13469,6 +13481,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w==
+  /strip-comments/2.0.1:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-ZprKx+bBLXv067WTCALv8SSz5l2+XhpYCsVtSqlMnkAXMWDq+/ekVbl1ghqP9rUHTzv6sm/DwCOiYutU/yp1fw==
   /strip-eof/1.0.0:
     engines:
       node: '>=0.10.0'
@@ -14965,12 +14983,12 @@ specifiers:
   '@nrwl/tao': 11.0.10
   '@nrwl/web': 11.0.10
   '@nrwl/workspace': 11.0.10
-  '@nx-plugins/i18n-core-utils': ^0.0.1-canary.1
-  '@nx-plugins/i18n-extract': ^0.0.1-canary.1
-  '@nx-plugins/i18n-react': ^0.0.1-canary.1
-  '@nx-plugins/i18n-react-data-access': ^0.0.1-canary.1
-  '@nx-plugins/i18n-react-ui': ^0.0.1-canary.1
-  '@nx-plugins/i18n-react-utils': ^0.0.1-canary.1
+  '@nx-plugins/i18n': 0.0.1-canary.15
+  '@nx-plugins/i18n-core-utils': ^0.0.1-canary.8
+  '@nx-plugins/i18n-react': ^0.0.1-canary.8
+  '@nx-plugins/i18n-react-data-access': ^0.0.1-canary.8
+  '@nx-plugins/i18n-react-ui': ^0.0.1-canary.8
+  '@nx-plugins/i18n-react-utils': ^0.0.1-canary.8
   '@testing-library/react': 11.1.2
   '@types/jest': 26.0.8
   '@types/node': 12.12.38
@@ -14990,11 +15008,13 @@ specifiers:
   eslint-plugin-jsx-a11y: 6.4.1
   eslint-plugin-react: 7.21.5
   eslint-plugin-react-hooks: 4.2.0
+  himalaya: ^1.1.0
   jest: 26.2.2
   next: 10.0.1
   prettier: 2.1.2
   react: 17.0.1
   react-dom: 17.0.1
+  strip-comments: ^2.0.1
   ts-jest: 26.4.0
   ts-node: ~9.1.1
   tslib: ^2.0.0

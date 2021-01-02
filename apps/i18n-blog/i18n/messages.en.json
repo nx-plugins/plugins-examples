@@ -1,0 +1,18 @@
+{
+  "sebitas": {
+    "id": "sebitas",
+    "description": "'paragraph ",
+    "intent": " description@@@sebitas",
+    "source": "apps/i18n-blog/pages/inbox.tsx",
+    "type": "TransUnit",
+    "target": "Seba2"
+  },
+  "sebas": {
+    "id": "sebas",
+    "description": "'paragraph ",
+    "intent": " description@@@sebas",
+    "source": "apps/i18n-blog/pages/inbox.tsx",
+    "type": "TransUnit",
+    "target": "Hello Inbox 1"
+  }
+}
