@@ -1,4 +1,5 @@
 import { TransUnit } from '@nx-plugins/i18n-react';
+import { I18nHeader } from '@plugins-examples/i18n/header';
 import React from 'react';
 
 import './inbox.module.css';
@@ -11,11 +12,12 @@ export function Inbox(props: InboxProps) {
     <>
     <p> Hola </p>
     <TransUnit value={'paragraph | description@@@sebitas'}>
-        Hello Inbox 4
+        <p> Hey </p>
       </TransUnit>
       <TransUnit value={'paragraph | description@@@sebas'}>
         Hello Inbox 1
       </TransUnit>
+      <I18nHeader></I18nHeader>  
     </>
   );
 }

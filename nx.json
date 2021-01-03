@@ -29,6 +29,9 @@
     "i18n-blog-e2e": {
       "tags": [],
       "implicitDependencies": ["i18n-blog"]
+    },
+    "i18n-header": {
+      "tags": []
     }
   }
 }

@@ -5,7 +5,7 @@
     "intent": " description@@@sebitas",
     "source": "apps/i18n-blog/pages/inbox.tsx",
     "type": "TransUnit",
-    "target": "Seba2"
+    "target": "Hello Inbox"
   },
   "sebas": {
     "id": "sebas",
@@ -14,5 +14,68 @@
     "source": "apps/i18n-blog/pages/inbox.tsx",
     "type": "TransUnit",
     "target": "Hello Inbox 1"
+  },
+  "header1": {
+    "id": "header1",
+    "description": "'paragraph ",
+    "intent": " description@@@header1",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "TransUnit",
+    "target": "This is the header1"
+  },
+  "ligia": {
+    "id": "ligia",
+    "description": "'paragraph ",
+    "intent": " description@@@ligia",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "TransUnit",
+    "target": "This is the header"
+  },
+  "andrea": {
+    "id": "andrea",
+    "description": "'paragraph ",
+    "intent": " description@@@andrea",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "TransUnit",
+    "target": "This is the header"
+  },
+  "header2": {
+    "id": "header2",
+    "description": "'paragraph ",
+    "intent": " description@@@header2",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "Plural",
+    "target": {
+      "zero": "Este es nuevo",
+      "one": "Este es nuevo",
+      "two": "Este es nuevo",
+      "other": "Este es nuevo"
+    }
+  },
+  "header3": {
+    "id": "header3",
+    "description": "'paragraph ",
+    "intent": " description@@@header3",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "Plural",
+    "target": {
+      "zero": "Este es nuevo",
+      "one": "Este es nuevo",
+      "two": "Este es nuevo",
+      "other": "Este es nuevo"
+    }
+  },
+  "header4": {
+    "id": "header4",
+    "description": "'paragraph ",
+    "intent": " description@@@header4",
+    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "type": "Plural",
+    "target": {
+      "zero": "Este es nuevo",
+      "one": "Este es nuevo",
+      "two": "Este es nuevo",
+      "other": "Este es nuevo"
+    }
   }
 }

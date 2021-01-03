@@ -61,7 +61,10 @@
           "options": {
             "framework": "React",
             "directory": "apps/i18n-blog/i18n",
-            "locales": ["en","es"]
+            "locales": [
+              "en",
+              "es"
+            ]
           }
         }
       }
@@ -90,6 +93,31 @@
             "lintFilePatterns": [
               "apps/i18n-blog-e2e/**/*.{js,ts}"
             ]
+          }
+        }
+      }
+    },
+    "i18n-header": {
+      "root": "libs/i18n/header",
+      "sourceRoot": "libs/i18n/header/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/i18n/header/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/i18n/header"
+          ],
+          "options": {
+            "jestConfig": "libs/i18n/header/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
