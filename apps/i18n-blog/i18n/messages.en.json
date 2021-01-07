@@ -5,7 +5,7 @@
     "intent": " description@@@sebitas",
     "source": "apps/i18n-blog/pages/inbox.tsx",
     "type": "TransUnit",
-    "target": "Hello Inbox"
+    "target": "Mio"
   },
   "sebas": {
     "id": "sebas",
