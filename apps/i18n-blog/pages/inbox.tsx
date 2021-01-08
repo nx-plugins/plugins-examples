@@ -1,7 +1,5 @@
-import { TransUnit } from './trans';
-import { I18nHeader } from '@plugins-examples/i18n/header';
-import React, { useContext } from 'react';
-import { TranslateContext } from '../TranslateContext';
+import { TransUnit } from '@nx-plugins/i18n-react-ui';
+import React from 'react';
 
 import './inbox.module.css';
 
@@ -17,11 +15,12 @@ export function Inbox(props: InboxProps) {
           <p> saa</p>
         </span>
       </TransUnit>
-      <p>
+      {/* <p>
+        Aqui
         <TransUnit value={'paragraph|description@@@sebas'}>
           Hello Inbox 1
         </TransUnit>
-      </p>
+      </p> */}
       {/* <I18nHeader></I18nHeader> */}
     </>
   );

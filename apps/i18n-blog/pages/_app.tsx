@@ -1,14 +1,17 @@
 import React, { useContext } from 'react';
 import { AppProps } from 'next/app';
 import './styles.css';
-import { TranslateContextProvider } from '../TranslateContext';
+import { TranslateContextProvider } from '@nx-plugins/i18n-react-data-access';
 import { Inbox } from './inbox';
+var messagesEn = require('../i18n/messages.en.json');
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function CustomApp( ) {
   const config = {
     locales: ["en","es"],
-    current: "en"
+    current: "en",
+    messages: { "en": messagesEn}
   }
+
   return (
     <>
       {/* <Plural value={'paragraph | description@@@inboxPlural'}>
