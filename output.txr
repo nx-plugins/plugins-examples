@@ -1,0 +1,4 @@
+yarn run v1.22.5
+$ nx run i18n-blog:extractor
+
+> nx run i18n-blog:extractor 

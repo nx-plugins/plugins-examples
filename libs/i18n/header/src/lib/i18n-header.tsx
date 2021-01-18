@@ -7,7 +7,7 @@ export interface I18nHeaderProps {}
 export function I18nHeader(props: I18nHeaderProps) {
   return (
     <>
-      <TransUnit value={'paragraph|description@@@header'}>This is the header</TransUnit>
+      <TransUnit value={'paragraph|description@@@header'} namespace={'common'}>This is the header</TransUnit>
       <SimpleText />
     </>
   );

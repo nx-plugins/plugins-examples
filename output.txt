@@ -1,0 +1,63 @@
+yarn run v1.22.5
+$ nx run i18n-blog:extractor
+
+> nx run i18n-blog:extractor 
+Project: i18n-blog
+Framework: React
+[{"file":"apps/i18n-blog/pages/_app.tsx","project":"i18n-blog","type":"app","path":"_app","dependencies":[],"elements":[]},{"file":"apps/i18n-blog/pages/inbox.tsx","project":"i18n-blog","type":"app","path":"inbox","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-header"}],"elements":[{"file":"apps/i18n-blog/pages/inbox.tsx","metadata":{"meaning":"paragraph","description":"description","id":"sebitas"},"type":"TransUnit","target":"We invited<0> {{user}}<1> Hello, you are<2> Sebas</2></1></0>.","project":"i18n-blog","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-header"}]}]},{"file":"apps/i18n-blog/pages/index.tsx","project":"i18n-blog","type":"app","path":"index","dependencies":[],"elements":[]},{"file":"apps/i18n-blog/pages/page-a.tsx","project":"i18n-blog","type":"app","path":"page-a","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-footer"},{"type":"static","source":"i18n-blog","target":"i18n-header"}],"elements":[{"file":"apps/i18n-blog/pages/page-a.tsx","metadata":{"meaning":"paragraph","description":"description","id":"pageA"},"type":"TransUnit","target":"Text in page A","project":"i18n-blog","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-footer"},{"type":"static","source":"i18n-blog","target":"i18n-header"}]}]},{"file":"apps/i18n-blog/pages/page-b.tsx","project":"i18n-blog","type":"app","path":"page-b","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-footer"},{"type":"static","source":"i18n-blog","target":"i18n-header"},{"type":"static","source":"i18n-blog","target":"i18n-card"}],"elements":[{"file":"apps/i18n-blog/pages/page-b.tsx","metadata":{"meaning":"paragraph","description":"description","id":"pageB"},"type":"TransUnit","target":"Text in page B","project":"i18n-blog","dependencies":[{"type":"static","source":"i18n-blog","target":"i18n-footer"},{"type":"static","source":"i18n-blog","target":"i18n-header"},{"type":"static","source":"i18n-blog","target":"i18n-card"}]}]}]
+
+ >  Locale: en 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: en 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: en 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: es 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: es 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: es 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: fr 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: fr 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: fr 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: sp 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: sp 
+              
+ No translations founded. Creating a new messages file
+
+ >  Locale: sp 
+              
+ No translations founded. Creating a new messages file
+
+>  NX  I18n Statistics
+
+  +----+------+--------+
+  | ID | Type | Source |
+  +----+------+--------+
+  +----+------+--------+
+Done in 2.13s.

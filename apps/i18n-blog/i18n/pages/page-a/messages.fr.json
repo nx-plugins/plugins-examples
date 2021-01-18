@@ -1,0 +1,23 @@
+{
+  "pageA": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "pageA"
+    },
+    "file": "apps/i18n-blog/pages/page-a.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-blog",
+        "target": "i18n-footer"
+      },
+      {
+        "type": "static",
+        "source": "i18n-blog",
+        "target": "i18n-header"
+      }
+    ],
+    "target": "Text in page A"
+  }
+}

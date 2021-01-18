@@ -2043,10 +2043,10 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
-"@nx-plugins/i18n-core@^0.0.1-canary.43":
-  version "0.0.1-canary.43"
-  resolved "https://registry.yarnpkg.com/@nx-plugins/i18n-core/-/i18n-core-0.0.1-canary.43.tgz#82547af7f3b718c53abbde3a3dd4e27a4bed17a2"
-  integrity sha512-I1pMyecaWy090XJIk+MMTwJjuTUwsyCuQmMxY69XLNnC5JW3q9dBaGKkwEFj/RzkwobtVE0DsL4Y6BgmH5wFHQ==
+"@nx-plugins/i18n-core@^0.0.1-canary.57":
+  version "0.0.1-canary.57"
+  resolved "https://registry.yarnpkg.com/@nx-plugins/i18n-core/-/i18n-core-0.0.1-canary.57.tgz#b67eb88a56b0b2525f798e546a88d1240ea6d734"
+  integrity sha512-aCxsYmgUkVIK1dfI0l1t18XOw+i1plH/PZG4Cbg81UFR5ZlxC2jPT26JtxWZ2JFbNKhXRMElgTuMsgtdOWcoLw==
   dependencies:
     async "^3.2.0"
     chalk-table "^1.0.2"

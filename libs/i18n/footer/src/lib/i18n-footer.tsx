@@ -9,8 +9,12 @@ export function I18nFooter(props: I18nFooterProps) {
   return (
     <div>
       <>
-      <TransUnit value={'paragraph|description@@@footer'}>This is the footer</TransUnit>
+      <div>
+        <div>
+        </div>
+      <TransUnit value={'paragraph|description@@@footer'} namespace={'common'}>This is the footer</TransUnit>
       <SimpleText />
+      </div>
     </>
     </div>
   );

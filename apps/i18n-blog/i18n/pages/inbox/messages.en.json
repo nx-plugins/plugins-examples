@@ -1,0 +1,18 @@
+{
+  "sebitas": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "sebitas"
+    },
+    "file": "apps/i18n-blog/pages/inbox.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-blog",
+        "target": "i18n-header"
+      }
+    ],
+    "target": "We invited<0> {{user}}<1> Hello, you are<2> Sebas</2></1></0>."
+  }
+}

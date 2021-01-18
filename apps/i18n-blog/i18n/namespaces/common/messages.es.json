@@ -1,34 +1,34 @@
 {
   "header": {
-    "metada": {
+    "metadata": {
       "meaning": "paragraph",
       "description": "description",
       "id": "header"
     },
     "file": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "target": "This is the header",
     "dependencies": [
       {
         "type": "static",
         "source": "i18n-header",
         "target": "core"
       }
-    ]
+    ],
+    "target": "This is the header"
   },
-  "sebitas": {
-    "metada": {
+  "footer": {
+    "metadata": {
       "meaning": "paragraph",
       "description": "description",
-      "id": "sebitas"
+      "id": "footer"
     },
-    "file": "apps/i18n-blog/pages/inbox.tsx",
-    "target": "empty",
+    "file": "libs/i18n/footer/src/lib/i18n-footer.tsx",
     "dependencies": [
       {
         "type": "static",
-        "source": "i18n-blog",
-        "target": "i18n-header"
+        "source": "i18n-footer",
+        "target": "core"
       }
-    ]
+    ],
+    "target": "This is the footer"
   }
 }
