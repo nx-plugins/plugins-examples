@@ -56,14 +56,17 @@
             "passWithNoTests": true
           }
         },
-        "extract": {
-          "executor": "@nx-plugins/i18n:build",
+        "extractor": {
+          "executor": "@nx-plugins/i18n-core:build",
           "options": {
             "framework": "React",
             "directory": "apps/i18n-blog/i18n",
             "locales": [
               "en",
-              "es"
+              "es",
+              "fr",
+              "sp",
+              "en"
             ]
           }
         }
@@ -117,6 +120,81 @@
           ],
           "options": {
             "jestConfig": "libs/i18n/header/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "core": {
+      "root": "libs/core",
+      "sourceRoot": "libs/core/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/core/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/core"
+          ],
+          "options": {
+            "jestConfig": "libs/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "i18n-footer": {
+      "root": "libs/i18n/footer",
+      "sourceRoot": "libs/i18n/footer/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/i18n/footer/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/i18n/footer"
+          ],
+          "options": {
+            "jestConfig": "libs/i18n/footer/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "i18n-card": {
+      "root": "libs/i18n/card",
+      "sourceRoot": "libs/i18n/card/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/i18n/card/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/i18n/card"
+          ],
+          "options": {
+            "jestConfig": "libs/i18n/card/jest.config.js",
             "passWithNoTests": true
           }
         }

@@ -1,7 +1,6 @@
-import React, { useContext } from 'react';
-import { AppProps } from 'next/app';
+import React from 'react';
 import './styles.css';
-import { TranslateContextProvider } from '@nx-plugins/i18n-react-data-access';
+import { TranslateContextProvider } from '@nx-plugins/i18n-react';
 import { Inbox } from './inbox';
 var messagesEn = require('../i18n/messages.en.json');
 

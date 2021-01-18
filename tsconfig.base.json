@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@plugins-examples/i18n/header": ["libs/i18n/header/src/index.ts"]
+      "@plugins-examples/i18n/header": ["libs/i18n/header/src/index.ts"],
+      "@plugins-examples/core": ["libs/core/src/index.ts"],
+      "@plugins-examples/i18n/footer": ["libs/i18n/footer/src/index.ts"],
+      "@plugins-examples/i18n/card": ["libs/i18n/card/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

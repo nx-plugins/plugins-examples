@@ -1,81 +1,34 @@
 {
+  "header": {
+    "metada": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "header"
+    },
+    "file": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "target": "This is the header",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-header",
+        "target": "core"
+      }
+    ]
+  },
   "sebitas": {
-    "id": "sebitas",
-    "description": "'paragraph ",
-    "intent": " description@@@sebitas",
-    "source": "apps/i18n-blog/pages/inbox.tsx",
-    "type": "TransUnit",
-    "target": "Mio"
-  },
-  "sebas": {
-    "id": "sebas",
-    "description": "'paragraph ",
-    "intent": " description@@@sebas",
-    "source": "apps/i18n-blog/pages/inbox.tsx",
-    "type": "TransUnit",
-    "target": "Hello Inbox 1"
-  },
-  "header1": {
-    "id": "header1",
-    "description": "'paragraph ",
-    "intent": " description@@@header1",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "TransUnit",
-    "target": "This is the header1"
-  },
-  "ligia": {
-    "id": "ligia",
-    "description": "'paragraph ",
-    "intent": " description@@@ligia",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "TransUnit",
-    "target": "This is the header"
-  },
-  "andrea": {
-    "id": "andrea",
-    "description": "'paragraph ",
-    "intent": " description@@@andrea",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "TransUnit",
-    "target": "This is the header"
-  },
-  "header2": {
-    "id": "header2",
-    "description": "'paragraph ",
-    "intent": " description@@@header2",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "Plural",
-    "target": {
-      "zero": "Este es nuevo",
-      "one": "Este es nuevo",
-      "two": "Este es nuevo",
-      "other": "Este es nuevo"
-    }
-  },
-  "header3": {
-    "id": "header3",
-    "description": "'paragraph ",
-    "intent": " description@@@header3",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "Plural",
-    "target": {
-      "zero": "Este es nuevo",
-      "one": "Este es nuevo",
-      "two": "Este es nuevo",
-      "other": "Este es nuevo"
-    }
-  },
-  "header4": {
-    "id": "header4",
-    "description": "'paragraph ",
-    "intent": " description@@@header4",
-    "source": "libs/i18n/header/src/lib/i18n-header.tsx",
-    "type": "Plural",
-    "target": {
-      "zero": "Este es nuevo",
-      "one": "Este es nuevo",
-      "two": "Este es nuevo",
-      "other": "Este es nuevo"
-    }
+    "metada": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "sebitas"
+    },
+    "file": "apps/i18n-blog/pages/inbox.tsx",
+    "target": "We invited<0> {{user}}<1> Hello, you are<2> Sebas</2></1></0>.",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-blog",
+        "target": "i18n-header"
+      }
+    ]
   }
 }
