@@ -1,0 +1,34 @@
+{
+  "footer": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "footer"
+    },
+    "file": "libs/i18n/footer/src/lib/i18n-footer.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-footer",
+        "target": "core"
+      }
+    ],
+    "target": "This is the footer"
+  },
+  "header": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "header"
+    },
+    "file": "libs/i18n/header/src/lib/i18n-header.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-header",
+        "target": "core"
+      }
+    ],
+    "target": "This is the header"
+  }
+}

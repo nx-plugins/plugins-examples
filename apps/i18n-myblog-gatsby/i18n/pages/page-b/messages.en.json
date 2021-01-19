@@ -1,0 +1,44 @@
+{
+  "pageB": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "pageB"
+    },
+    "file": "apps/i18n-myblog-gatsby/src/pages/page-b.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-myblog-gatsby",
+        "target": "i18n-footer"
+      },
+      {
+        "type": "static",
+        "source": "i18n-myblog-gatsby",
+        "target": "i18n-header"
+      },
+      {
+        "type": "static",
+        "source": "i18n-myblog-gatsby",
+        "target": "i18n-card"
+      }
+    ],
+    "target": "Text in page B"
+  },
+  "card": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "card"
+    },
+    "file": "libs/i18n/card/src/lib/i18n-card.tsx",
+    "dependencies": [
+      {
+        "type": "static",
+        "source": "i18n-card",
+        "target": "core"
+      }
+    ],
+    "target": "This is the card"
+  }
+}

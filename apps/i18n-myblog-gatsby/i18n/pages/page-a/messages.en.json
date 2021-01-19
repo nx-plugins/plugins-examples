@@ -1,0 +1,12 @@
+{
+  "pageA": {
+    "metadata": {
+      "meaning": "paragraph",
+      "description": "description",
+      "id": "pageA"
+    },
+    "file": "apps/i18n-myblog-gatsby/src/pages/page-a.tsx",
+    "dependencies": [],
+    "target": "Text in page A"
+  }
+}
